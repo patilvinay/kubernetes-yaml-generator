@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Kuberntes-Stellar</title>
+
+        <meta name="description" content="A futuristic kubernetes dashboard">
+        <meta name="author" content="Rene Schoonrok">
+        <meta name="robots" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Favicons (just the basics for now, check out http://realfavicongenerator.net/ for all available) -->
+        <link rel="shortcut icon" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/favicon.png" sizes="32x32">
+
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700&Open+Sans:300,400,600,700">
+
+        <!-- Bootstrap and Ares CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="animate.min.css">
+        <link rel="stylesheet" href="ares.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/dracula.min.css">
+
+
+    </head>
+    <body>
+
+        <!-- Page Container -->
+        <!--
+            Available Classes: 'modern-sf', 'vintage-sf', 'interstellar-sf'
+        -->
+        <div id="page-container" class="modern-sf">
+            <!-- Header -->
+            <header id="page-header">
+                <div class="h3 text-right pull-right hidden-xs">
+                    <div class="text-crystal font-w300">Transmitting</div>
+                    <div class="text-success animated infinite pulse pull-right">[CONNECTED]</div>
+                </div>
+                <h1 class="h3 font-w200">
+                    <span class="text-crystal">//</span> <a class="link-sf font-w300" href="https://github.com/reneschoonrok/Kubernetes-stellar">KUBERNETES-YAML-GENERATOR</a>
+                </h1>
+                <p>
+                <label for="box" id="lineid" style = "font-size:14px">Welcome - Scanning for Hybrid Cloud Technology  </label>
+                <label for="box" style = "font-size:14px">//GKE //EKS //AKS //Openshift //Minikube //Other. </label>
+                    <label for="box" style = "font-size:14px">Select or enter a namespace to start receiving. </label>
+            </p>
+
+
+                <script>
+                    function sendToken() {
+                        myauthtoken = document.getElementById('mytoken').value;
+                    }
+                </script>
+
+
+
+
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Content -->
+            <main id="page-main">
+                <!-- Columns -->
+                <div class="row">
+                    <!-- Animated Circles Column -->
+                    <div class="col-lg-6 col-lg-push-3 overflow-hidden push-20">
+                                        <div class="circles push-50">
+
+
+                                        <div class="row">
+
+                                            <!-- <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail1">Select a pod to get details..</button>
+                                             </div>-->
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail2"></button>
+                                             </div>
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail3"></button>
+                                             </div>
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail4"></button>
+                                             </div>
+                                             <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetailx5"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2t push-10" id="podinfodetail5"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-10" id="podinfodetail5f"></button>
+                                             </div>
+                                             <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetailx6"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2t push-10" id="podinfodetail6"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-10" id="podinfodetail6f"></button>
+                                             </div>
+                                             <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetailx7"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2t push-10" id="podinfodetail7"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-10" id="podinfodetail7f"></button>
+                                             </div>
+                                             <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetailx8"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2t push-10" id="podinfodetail8"></button>
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-10" id="podinfodetail8f"></button>
+                                             </div>
+
+
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail11"></button>
+                                             </div>
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail12"></button>
+                                             </div>
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail13"></button>
+                                             </div>
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail14"></button>
+                                             </div>
+                                             <div class="col-xs-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail15"></button>
+                                             </div>
+                                             <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10">Pod logs</button>
+
+                                             </div>
+                                             <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-5" id="podinfodetail10" onclick="deletePod()">Delete pod</button>
+                                             </div>
+
+
+                                             <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                 <div class="container" contenteditable="true">
+                                                 <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext" rows="15" cols="110" class="button6" style="resize:none" ></textarea>
+                                                     <!--<textarea id="myTable" border="1" cols="40" rows="50"></textarea>
+                                                    // $(".text").load("pod.txt"); -->
+                                             </div>
+
+                                            </div>
+                                         </div>
+                                     </div>
+
+                                     </div>
+                                     <!-- END Animated Circles Column -->
+
+
+
+                    <!-- Left Column -->
+                    <div class="col-sm-6 col-lg-3 col-lg-pull-6">
+                        <!-- Environment -->
+                        <div class="block">
+                            <div class="block-header overflow-hidden">
+                                <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Namespace Pods</h2>
+                            </div>
+                            <div class="block-content" id="myblock">
+                                <div class="row items-push overflow-hidden">
+                                   <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Pod</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Namespace</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Configmap</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Secret</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Environment -->
+
+
+
+
+                    </div>
+                    <!-- END Left Column -->
+
+
+                </div>
+                <!-- END Columns -->
+
+                <!-- Page Footer -->
+                <div class="block">
+
+                    <div class="block-content block-content-full font-s12 text-center visibility-hidden" data-toggle="appear" data-class="animated fadeIn" data-timeout="1000">
+                        2019 &copy; Build by Rene Schoonrok. <a class="link-sf" href="https://github.com/reneschoonrok/">Github</a> CSS/Web layout by <a class="link-sf" href="https://pixelcave.com/">Pixelcave</a>
+                    </div>
+                </div>
+                <!-- END Page Footer -->
+            </main>
+            <!-- END Main Content -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- Scripts -->
+        <script src="jquery.min.js"></script>
+        <script src="jquery.appear.min.js"></script>
+        <script src="jquery.countTo.min.js"></script>
+        <script src="jquery.easypiechart.min.js"></script>
+         <script src="ares.js"></script>
+
+
+         <!-- Page JS Code -->
+        <script>
+            displayChat();
+            function changenamespace(element) {
+                //alert(element.options[element.selectedIndex].text)
+                mynamespace =element.options[element.selectedIndex].text;
+                //var lineid = document.getElementById("lineid")
+                //lineid.textContent ="Connecting to namespace. Make sure your serviceaccount has rights!"
+            }
+
+            function changenamespacecustom(element) {
+                //alert(element.options[element.selectedIndex].text)
+                mynamespace =element.value;
+            }
+            var mynamespace = 'dev';
+            var podinfo = [];
+            var eventinfo = [];
+            var ingressinfo = [];
+            var pvcinfo = [];
+            var deployment = [];
+            var selecteditem = "";
+            var selectedtype = "";
+            var myauthtoken = "empty";
+            var showdeployments = "false";
+            var showvolumes = "false";
+
+
+
+
+
+            $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    //alert('enter key is pressed');
+                    //console.log('enter key is pressed');
+                    addchatline();
+                    chatmsg.text = '';
+                }
+            });
+
+            jQuery(function(){
+                // Init page helpers (Appear + CountTo + Easy Pie Chart plugins)
+                Ares.initHelpers(['appear', 'appear-countTo', 'easy-pie-chart']);
+            });
+            //podnum.innerHTML=65
+
+
+
+
+            function displayChat() {
+
+            }
+
+            function displayDeployments() {
+                var deploymentlabel = document.getElementById("mydeploymentslabel")
+                if (showdeployments == "true") {
+                    showdeployments = "false";
+                    mydeploymentslabel.textContent = "+ DEPLOYMENTS"
+                    const myNode = document.getElementById("mydeploymentsblock");
+                    while (myNode.firstChild) {
+                        myNode.removeChild(myNode.firstChild);
+                    }
+                } else
+                {
+                    showdeployments = "true";
+                    mydeploymentslabel.textContent = "- DEPLOYMENTS"
+                }
+            }
+
+            function displayVolumes() {
+                var myvolumeslabel = document.getElementById("myvolumeslabel")
+                if (showvolumes == "true") {
+                    showvolumes = "false";
+                    myvolumeslabel.textContent = "+ VOLUMES"
+                    const myNode = document.getElementById("myvolumesblock");
+                    while (myNode.firstChild) {
+                        myNode.removeChild(myNode.firstChild);
+                    }
+                } else
+                {
+                    showvolumes = "true";
+                    myvolumeslabel.textContent = "- VOLUMES"
+                }
+            }
+
+
+
+            //var intervalID = window.setInterval(myNamespaceRefresh, 10000);
+
+            //function myNamespaceRefresh() {
+            //    loadnamespaces();
+            //    //namespaces.splice(0, namespaces.length)
+            //}
+
+            function selectPod(itemtext) {
+                selecteditem = itemtext;
+                selectedtype = "Pod";
+                if (selecteditem=="Pod")
+                {areatext.value = "";
+                    areatext.value += "apiVersion: v1"; areatext.value += "\r\n";
+                    areatext.value += "kind: Pod"; areatext.value += "\r\n";
+                    areatext.value += "metadata:"; areatext.value += "\r\n";
+                    areatext.value += "  name: memory-demo-2"; areatext.value += "\r\n";
+                    areatext.value += "  namespace: mem-example"; areatext.value += "\r\n";
+                    areatext.value += "spec:"; areatext.value += "\r\n";
+                    areatext.value += "  containers:"; areatext.value += "\r\n";
+                    areatext.value += "  - name: grafana"; areatext.value += "\r\n";
+                    areatext.value += "    image: grafana/grafana"; areatext.value += "\r\n";
+                    areatext.value += "    resources:"; areatext.value += "\r\n";
+                    areatext.value += "      requests:"; areatext.value += "\r\n";
+                    areatext.value += "        memory: \"50Mi\""; areatext.value += "\r\n";
+                    areatext.value += "      limits:"; areatext.value += "\r\n";
+                    areatext.value += "        memory: \"100Mi\""; areatext.value += "\r\n";
+
+
+                }
+
+                if (selecteditem=="Namespace")
+                {areatext.value = "";
+                    areatext.value += "apiVersion: v1"; areatext.value += "\r\n";
+                    areatext.value += "kind: Namespace"; areatext.value += "\r\n";
+                    areatext.value += "metadata:"; areatext.value += "\r\n";
+                    areatext.value += "  name: <give a name>"; areatext.value += "\r\n";
+                }
+
+                if (selecteditem=="Configmap")
+                {areatext.value = "";
+                    areatext.value += "apiVersion: v1"; areatext.value += "\r\n";
+                    areatext.value += "kind: ConfigMap"; areatext.value += "\r\n";
+                    areatext.value += "metadata:"; areatext.value += "\r\n";
+                    areatext.value += "  creationTimestamp: 2017-12-27T18:36:28Z"; areatext.value += "\r\n";
+                    areatext.value += "  name: game-config-env-file"; areatext.value += "\r\n";
+                    areatext.value += "  namespace: default"; areatext.value += "\r\n";
+                    areatext.value += "  resourceVersion: \"809965\""; areatext.value += "\r\n";
+                    areatext.value += "  uid: d9d1ca5b-eb34-11e7-887b-42010a8002b8"; areatext.value += "\r\n";
+                    areatext.value += "data:"; areatext.value += "\r\n";
+                    areatext.value += "  enemies: aliens"; areatext.value += "\r\n";
+                    areatext.value += "  energy: \"3\""; areatext.value += "\r\n";
+
+                }
+               // hljs.initHighlighting.called = false;
+                //hljs.initHighlighting();
+               // hljs.initHighlightingOnLoad();
+                //0$( "textarea" ).load("pod.txt", function() {
+                //    alert( "file loaded in textarea" );
+                //});
+                //$.getJSON("pod.txt", function(json) {
+                 //   console.log(json); // this will show the info it in firebug console
+                //});
+            }
+
+            //var intervalID = window.setInterval(myRefresh, 1800);
+
+            //function myRefresh() {
+            //   loadinfo();
+            //}
+
+            //var intervalID = window.setInterval(poddetails, 1900);
+
+            //function poddetails() {
+            //    loadpoddetails();
+           // }
+
+           // var intervalID = window.setInterval(logdetails, 3200);
+
+          //  function logdetails() {
+           //     loadlogdetails();
+           // }
+
+           // var intervalID = window.setInterval(eventdetails, 2000);
+
+           // function eventdetails() {
+           //     loadevents();
+           // }
+
+          //  var intervalID = window.setInterval(ingressdetails, 6000);
+
+         //   function ingressdetails() {
+         //       loadingresses();
+
+          //  }
+
+           // var intervalID = window.setInterval(pvcdetails, 4000);
+
+           // function pvcdetails() {
+           //     if ( showvolumes == "true") {
+           //         loadpvc();
+           //     }
+          //  }
+
+           // var intervalID = window.setInterval(deploymentsload, 3000);
+
+           // function deploymentsload() {
+           //     if ( showdeployments == "true")
+           //     {
+           //         loaddeployments();
+          //      }
+          //  }
+
+        //    var intervalID = window.setInterval(getchat, 3000);
+
+        //    function getchat() {
+        //        loadchat();
+        //    }
+
+        </script>
+        <script src="js/typing.js"></script>
+
+   </body>
+</html>
