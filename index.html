@@ -139,12 +139,12 @@
                                                  <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail15"></button>
                                              </div>
                                              <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
-                                                 <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10" onclick="function1()">...</button>
+                                                 <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10" onclick="function1()">.</button>
 
                                              </div>
                                              <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
 
-                                                 <button class="btn btn-xl btn-block btn-sf2f push-5" id="function2" onclick="function2()">...</button>
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-5" id="function2" onclick="function2()">.</button>
                                              </div>
 
 
@@ -222,6 +222,9 @@
                                 </div>
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Port</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Resources</button>
                                 </div>
                             </div>
                         </div>
@@ -380,6 +383,11 @@
                 {
                     getComponent('port.yaml')
                 }
+
+                if (selecteditem=="--Resources")
+                {
+                    getComponent('resources.yaml')
+                }
             }
 
             function selectPod(itemtext) {
@@ -389,13 +397,13 @@
                 {
                     getResource('pod.yaml')
 
-                    var mypodinfodetail10 = document.getElementById("podinfodetail10")
+                    //var mypodinfodetail10 = document.getElementById("podinfodetail10")
 
-                    mypodinfodetail10.textContent = "Readynessprobe"
+                    //mypodinfodetail10.textContent = "Readynessprobe"
 
-                    var myfunction2 = document.getElementById("function2")
+                    //var myfunction2 = document.getElementById("function2")
 
-                    myfunction2.textContent = "Livenessprobe"
+                   // myfunction2.textContent = "Livenessprobe"
 
                 }
 
