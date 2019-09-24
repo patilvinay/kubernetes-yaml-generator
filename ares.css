@@ -340,6 +340,7 @@ background: rgba(255, 255, 255, .15);
 }
 
 .btn.btn-sf3 {
+    font-family: Lucida Console;
     width: auto;
     text-align: left;
     font-weight: 600;
@@ -348,7 +349,7 @@ background: rgba(255, 255, 255, .15);
     /* border: 2px solid rgba(255, 255, 255, .25); */
     border-left-width: 2px;
     border-right-width: 2px;
-    background: transparent;
+    background:rgba(0,0,0,0.7);
     padding: 6px 6px;
     margin-bottom: 0px;
     border-color: rgba(255, 255, 255, .5);

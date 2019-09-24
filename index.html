@@ -150,14 +150,14 @@
 
                                              <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                  <div class="container" contenteditable="true">
-                                                 <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext" rows="15" cols="90" class="button6" style="resize:none" data="pod.txt"></textarea>
+                                                 <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext" rows="15" cols="90" class="button6" style="resize:none" data="pod.yaml"></textarea>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                 <div class="container" contenteditable="true">
-                                                    <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext2" rows="15" cols="90" class="button6" style="resize:none" data="pod.txt"></textarea>
+                                                    <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext2" rows="15" cols="90" class="button6" style="resize:none" data="pod.yaml"></textarea>
                                                 </div>
 
                                             </div>
@@ -172,11 +172,9 @@
 
                     <!-- Left Column -->
                     <div class="col-sm-6 col-lg-3 col-lg-pull-6">
-                        <!--->
 
 
 
- nment -->
                         <div class="block">
                             <div class="block-header overflow-hidden">
                                 <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Resources</h2>
@@ -204,6 +202,32 @@
                     </div>
                     <!-- END Left Column -->
 
+
+                    <!-- Right Column -->
+                    <div class="col-sm-6 col-lg-3">
+
+                        <div class="block">
+                            <div class="block-header overflow-hidden">
+                                <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Components</h2>
+                            </div>
+                            <div class="block-content" id="myblock">
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Pod Components</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Livenessprobe</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Readynessprobe</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Port</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END Right Column -->
 
                 </div>
                 <!-- END Columns -->
@@ -332,11 +356,30 @@
                 }
 
              function function1() {
-                getComponent('readynessprobe.txt')
+                getComponent('readynessprobe.yaml')
             }
 
              function function2() {
-                getComponent('livenessprobe.txt')
+                getComponent('livenessprobe.yaml')
+            }
+
+            function selectComponent(itemtext) {
+                selecteditem = itemtext;
+
+                if (selecteditem=="--Livenessprobe")
+                {
+                    getComponent('livenessprobe.yaml')
+                }
+
+                if (selecteditem=="--Readynessprobe")
+                {
+                    getComponent('readynessprobe.yaml')
+                }
+
+                if (selecteditem=="--Port")
+                {
+                    getComponent('port.yaml')
+                }
             }
 
             function selectPod(itemtext) {
@@ -344,7 +387,7 @@
                 selectedtype = "Pod";
                 if (selecteditem=="Pod")
                 {
-                    getResource('pod.txt')
+                    getResource('pod.yaml')
 
                     var mypodinfodetail10 = document.getElementById("podinfodetail10")
 
@@ -361,18 +404,18 @@
 
                 if (selecteditem=="Namespace")
                 {
-                  getResource('namespace.txt')
+                  getResource('namespace.yaml')
                 }
 
                 if (selecteditem=="Configmap")
                 {
-                  getResource('configmap.txt')
+                  getResource('configmap.yaml')
 
                 }
 
                  if (selecteditem=="Secret")
                 {
-                  getResource('secret.txt')
+                  getResource('secret.yaml')
 
                 }
                // hljs.initHighlighting.called = false;
