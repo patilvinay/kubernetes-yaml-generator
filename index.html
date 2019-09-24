@@ -139,23 +139,29 @@
                                                  <button class="btn btn-xl btn-block btn-sf2 push-10" id="podinfodetail15"></button>
                                              </div>
                                              <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
-                                                 <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10">...</button>
+                                                 <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10" onclick="function1()">...</button>
 
                                              </div>
                                              <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
 
-                                                 <button class="btn btn-xl btn-block btn-sf2f push-5" id="podinfodetail10" onclick="deletePod()">...</button>
+                                                 <button class="btn btn-xl btn-block btn-sf2f push-5" id="function2" onclick="function2()">...</button>
                                              </div>
 
 
                                              <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                  <div class="container" contenteditable="true">
-                                                 <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext" rows="15" cols="110" class="button6" style="resize:none" ></textarea>
-                                                     <!--<textarea id="myTable" border="1" cols="40" rows="50"></textarea>
-                                                    // $(".text").load("pod.txt"); -->
-                                             </div>
+                                                 <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext" rows="15" cols="90" class="button6" style="resize:none" data="pod.txt"></textarea>
+                                                </div>
 
                                             </div>
+
+                                            <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                <div class="container" contenteditable="true">
+                                                    <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext2" rows="15" cols="90" class="button6" style="resize:none" data="pod.txt"></textarea>
+                                                </div>
+
+                                            </div>
+
                                          </div>
                                      </div>
 
@@ -166,10 +172,14 @@
 
                     <!-- Left Column -->
                     <div class="col-sm-6 col-lg-3 col-lg-pull-6">
-                        <!-- Environment -->
+                        <!--->
+
+
+
+ nment -->
                         <div class="block">
                             <div class="block-header overflow-hidden">
-                                <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Resources to chose from</h2>
+                                <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Resources</h2>
                             </div>
                             <div class="block-content" id="myblock">
                                 <div class="row items-push overflow-hidden">
@@ -305,57 +315,64 @@
 
 
 
-            //var intervalID = window.setInterval(myNamespaceRefresh, 10000);
 
-            //function myNamespaceRefresh() {
-            //    loadnamespaces();
-            //    //namespaces.splice(0, namespaces.length)
-            //}
+
+                const getResource = async file => {
+                  const response = await fetch(file)
+                  const text = await response.text()
+                  //console.log(text)
+                  areatext.value = text
+                }
+
+                 const getComponent = async file => {
+                  const response = await fetch(file)
+                  const text = await response.text()
+                  //console.log(text)
+                  areatext2.value = text
+                }
+
+             function function1() {
+                getComponent('readynessprobe.txt')
+            }
+
+             function function2() {
+                getComponent('livenessprobe.txt')
+            }
 
             function selectPod(itemtext) {
                 selecteditem = itemtext;
                 selectedtype = "Pod";
                 if (selecteditem=="Pod")
-                {areatext.value = "";
-                    areatext.value += "apiVersion: v1"; areatext.value += "\r\n";
-                    areatext.value += "kind: Pod"; areatext.value += "\r\n";
-                    areatext.value += "metadata:"; areatext.value += "\r\n";
-                    areatext.value += "  name: memory-demo-2"; areatext.value += "\r\n";
-                    areatext.value += "  namespace: mem-example"; areatext.value += "\r\n";
-                    areatext.value += "spec:"; areatext.value += "\r\n";
-                    areatext.value += "  containers:"; areatext.value += "\r\n";
-                    areatext.value += "  - name: grafana"; areatext.value += "\r\n";
-                    areatext.value += "    image: grafana/grafana"; areatext.value += "\r\n";
-                    areatext.value += "    resources:"; areatext.value += "\r\n";
-                    areatext.value += "      requests:"; areatext.value += "\r\n";
-                    areatext.value += "        memory: \"50Mi\""; areatext.value += "\r\n";
-                    areatext.value += "      limits:"; areatext.value += "\r\n";
-                    areatext.value += "        memory: \"100Mi\""; areatext.value += "\r\n";
+                {
+                    getResource('pod.txt')
 
+                    var mypodinfodetail10 = document.getElementById("podinfodetail10")
+
+                    mypodinfodetail10.textContent = "Readynessprobe"
+
+                    var myfunction2 = document.getElementById("function2")
+
+                    myfunction2.textContent = "Livenessprobe"
 
                 }
 
+
+
+
                 if (selecteditem=="Namespace")
-                {areatext.value = "";
-                    areatext.value += "apiVersion: v1"; areatext.value += "\r\n";
-                    areatext.value += "kind: Namespace"; areatext.value += "\r\n";
-                    areatext.value += "metadata:"; areatext.value += "\r\n";
-                    areatext.value += "  name: <give a name>"; areatext.value += "\r\n";
+                {
+                  getResource('namespace.txt')
                 }
 
                 if (selecteditem=="Configmap")
-                {areatext.value = "";
-                    areatext.value += "apiVersion: v1"; areatext.value += "\r\n";
-                    areatext.value += "kind: ConfigMap"; areatext.value += "\r\n";
-                    areatext.value += "metadata:"; areatext.value += "\r\n";
-                    areatext.value += "  creationTimestamp: 2017-12-27T18:36:28Z"; areatext.value += "\r\n";
-                    areatext.value += "  name: game-config-env-file"; areatext.value += "\r\n";
-                    areatext.value += "  namespace: default"; areatext.value += "\r\n";
-                    areatext.value += "  resourceVersion: \"809965\""; areatext.value += "\r\n";
-                    areatext.value += "  uid: d9d1ca5b-eb34-11e7-887b-42010a8002b8"; areatext.value += "\r\n";
-                    areatext.value += "data:"; areatext.value += "\r\n";
-                    areatext.value += "  enemies: aliens"; areatext.value += "\r\n";
-                    areatext.value += "  energy: \"3\""; areatext.value += "\r\n";
+                {
+                  getResource('configmap.txt')
+
+                }
+
+                 if (selecteditem=="Secret")
+                {
+                  getResource('secret.txt')
 
                 }
                // hljs.initHighlighting.called = false;
@@ -367,6 +384,12 @@
                 //$.getJSON("pod.txt", function(json) {
                  //   console.log(json); // this will show the info it in firebug console
                 //});
+
+
+
+
+
+
             }
 
             //var intervalID = window.setInterval(myRefresh, 1800);
