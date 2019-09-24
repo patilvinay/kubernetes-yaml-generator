@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdeaa8f0-d428-4e27-acf5-13b4a050cecd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ares.css" beforeDir="false" afterPath="$PROJECT_DIR$/ares.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmap.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livenessprobe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/namespace.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pod.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readynessprobe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/secret.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1319">
-              <caret line="223" column="108" selection-start-line="223" selection-start-column="108" selection-end-line="223" selection-end-column="108" />
+            <state relative-caret-position="215">
+              <caret line="146" column="140" selection-start-line="146" selection-start-column="140" selection-end-line="146" selection-end-column="140" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ares.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
@@ -79,9 +71,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/router/server.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/ares.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -168,12 +160,12 @@
       <updated>1569162637359</updated>
       <workItem from="1569162638580" duration="867000" />
       <workItem from="1569269629371" duration="1140000" />
-      <workItem from="1569353013118" duration="2380000" />
+      <workItem from="1569353013118" duration="2967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4387000" />
+    <option name="totallyTimeSpent" value="4974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
@@ -216,10 +208,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ares.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="351" column="29" selection-start-line="351" selection-start-column="29" selection-end-line="351" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1319">
-          <caret line="223" column="108" selection-start-line="223" selection-start-column="108" selection-end-line="223" selection-end-column="108" />
+        <state relative-caret-position="215">
+          <caret line="146" column="140" selection-start-line="146" selection-start-column="140" selection-end-line="146" selection-end-column="140" />
           <folding>
             <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -228,13 +227,6 @@
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#23;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#14518#14524#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ares.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="351" column="29" selection-start-line="351" selection-start-column="29" selection-end-line="351" selection-end-column="29" />
         </state>
       </provider>
     </entry>
