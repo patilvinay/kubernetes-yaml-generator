@@ -221,13 +221,13 @@ a.link-sf:active:before {
 
 .btn.btn-sf:hover,
 .btn.btn-sf:focus {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(43, 193, 110, 1);
     /*border-color: rgba(255, 255, 255, 1);*/
     outline: 0;
 }
 
 .btn.btn-sf:active {
-    color: #fff;
+    color: rgba(43, 193, 110, 1);
     /*border-color: #fff;*/
     background: rgba(255, 255, 255, .15);
 }
@@ -246,13 +246,13 @@ a.link-sf:active:before {
 
 .btn.btn-sf-nok:hover,
 .btn.btn-sf-nok:focus {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(43, 193, 110, 1);
     border-color: rgba(255, 255, 255, 1);
     outline: 0;
 }
 
 .btn.btn-sf-nok:active {
-    color: #fff;
+    color: rgba(43, 193, 110, 1);
     border-color: #fff;
     background: rgba(255, 255, 255, .15);
 }
@@ -263,7 +263,7 @@ a.link-sf:active:before {
     text-align: left;
     font-weight: 600;
     font-size: 14px;
-    color: rgba(255, 255, 255, .75);
+    color: rgba(43, 193, 110, 1);
 /* border: 2px solid rgba(255, 255, 255, .25); */
 border-left-width: 4px;
 border-right-width: 4px;
@@ -274,7 +274,7 @@ background: transparent;
 
 .btn.btn-sf2:hover,
 .btn.btn-sf2:focus {
-color: rgba(255, 255, 255, 1);
+    color: rgba(43, 193, 110, 1);
 border-color: rgba(255, 255, 255, 1);
 outline: 0;
 }
@@ -358,13 +358,13 @@ background: rgba(255, 255, 255, .15);
 
 .btn.btn-sf3:hover,
 .btn.btn-sf3:focus {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(43, 193, 110, 1);
     border-color: rgba(255, 255, 255, 1);
     outline: 0;
 }
 
 .btn.btn-sf3:active {
-    color: #fff;
+    color: rgba(43, 193, 110, 1);
     border-color: #fff;
     background: rgba(255, 255, 255, .15);
 }
