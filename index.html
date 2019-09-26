@@ -127,20 +127,16 @@
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Secret</button>
                                 </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">PersistentVolume</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">PersistentVolumeClaim</button>
+                                </div>
+
                             </div>
                         </div>
                         <!-- END Environment -->
-
-
-
-
-                    </div>
-                    <!-- END Left Column -->
-
-
-                    <!-- Right Column -->
-                    <div class="col-sm-6 col-lg-3">
-
                         <div class="block">
                             <div class="block-header overflow-hidden">
                                 <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Components</h2>
@@ -151,6 +147,12 @@
                                 </div>
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeHttp</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Namespace</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Volumeclaim</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeCommand</button>
@@ -166,6 +168,17 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+                    </div>
+                    <!-- END Left Column -->
+
+
+                    <!-- Right Column -->
+                    <div class="col-sm-6 col-lg-3">
+
+
 
                     </div>
                     <!-- END Right Column -->
@@ -196,7 +209,6 @@
 
          <!-- Page JS Code -->
         <script>
-            displayChat();
             function changenamespace(element) {
                 //alert(element.options[element.selectedIndex].text)
                 mynamespace =element.options[element.selectedIndex].text;
@@ -222,9 +234,6 @@
             var showvolumes = "false";
 
 
-
-
-
             $(document).keypress(function (e) {
                 if (e.which == 13) {
                     //alert('enter key is pressed');
@@ -240,44 +249,6 @@
             });
             //podnum.innerHTML=65
 
-
-
-
-            function displayChat() {
-
-            }
-
-            function displayDeployments() {
-                var deploymentlabel = document.getElementById("mydeploymentslabel")
-                if (showdeployments == "true") {
-                    showdeployments = "false";
-                    mydeploymentslabel.textContent = "+ DEPLOYMENTS"
-                    const myNode = document.getElementById("mydeploymentsblock");
-                    while (myNode.firstChild) {
-                        myNode.removeChild(myNode.firstChild);
-                    }
-                } else
-                {
-                    showdeployments = "true";
-                    mydeploymentslabel.textContent = "- DEPLOYMENTS"
-                }
-            }
-
-            function displayVolumes() {
-                var myvolumeslabel = document.getElementById("myvolumeslabel")
-                if (showvolumes == "true") {
-                    showvolumes = "false";
-                    myvolumeslabel.textContent = "+ VOLUMES"
-                    const myNode = document.getElementById("myvolumesblock");
-                    while (myNode.firstChild) {
-                        myNode.removeChild(myNode.firstChild);
-                    }
-                } else
-                {
-                    showvolumes = "true";
-                    myvolumeslabel.textContent = "- VOLUMES"
-                }
-            }
 
 
 
@@ -367,6 +338,14 @@
                      domerge("image:")
                  }
 
+                 if (selectedcomponent=="--Pod-Namespace"){
+                     domerge("name:")
+                 }
+
+                 if (selectedcomponent=="--Pod-Volumeclaim"){
+                     domerge("image:")
+                 }
+
             }
 
              function function2() {
@@ -376,70 +355,23 @@
             function selectComponent(itemtext) {
                 selectedcomponent = itemtext;
 
-                if (selectedcomponent=="--LivenessProbeHttp")
+                if (selectedcomponent!="")
                 {
-                    getComponent('livenessprobehttp.yaml')
+                    getComponent(selectedcomponent+'.yaml')
                 }
 
-                if (selectedcomponent=="--LivenessProbeCommand")
-                {
-                    getComponent('livenessprobecommand.yaml')
-                }
-
-                if (selectedcomponent=="--Readynessprobe")
-                {
-                    getComponent('readynessprobe.yaml')
-                }
-
-                if (selectedcomponent=="--Port")
-                {
-                    getComponent('port.yaml')
-                }
-
-                if (selectedcomponent=="--Resources")
-                {
-                    getComponent('resources.yaml')
-                }
             }
 
             function selectPod(itemtext) {
                 selecteditem = itemtext;
                 selectedtype = "Pod";
-                if (selecteditem=="Pod")
-                {
-                    getResource('pod.yaml')
 
-                }
-
-
-                if (selecteditem=="Namespace")
-                {
-                  getResource('namespace.yaml')
-                }
-
-                if (selecteditem=="Service")
-                {
-                    getResource('service.yaml')
-                }
-
-                if (selecteditem=="Deployment")
-                {
-                    getResource('deployment.yaml')
-                }
-                if (selecteditem=="Configmap")
-                {
-                  getResource('configmap.yaml')
-
-                }
-
-                 if (selecteditem=="Secret")
-                {
-                  getResource('secret.yaml')
-
-                }
+                if (selecteditem != ""){
+                    var openitem = selecteditem+ '.yaml';
+                    getResource(openitem)
+                 }
 
             }
-
         </script>
         <script src="js/typing.js"></script>
 
