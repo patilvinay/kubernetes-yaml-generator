@@ -46,9 +46,9 @@ p {
 }
 
 .container {
-    margin: 2.5em;
-    padding: 15px;
-    border-radius: 8px;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 2px;
 }
 .console {
     height: 100px;
@@ -344,7 +344,7 @@ background: rgba(255, 255, 255, .15);
     width: auto;
     text-align: left;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: rgba(43, 193, 110, 1);
     /* border: 2px solid rgba(255, 255, 255, .25); */
     border-left-width: 2px;
