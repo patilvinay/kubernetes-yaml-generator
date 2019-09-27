@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdeaa8f0-d428-4e27-acf5-13b4a050cecd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/--LivenessProbeCommand.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/--LivenessProbeHttp.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/--Pod-Namespace.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/--Pod-Volumeclaim.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/--Port.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/--Readynessprobe.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/--Resources.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Busybox.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configmap.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deployment-stellar.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Helloworld.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mysql.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Namespace.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nginx.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersistentVolume.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersistentVolumeClaim.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pod.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Secret.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service-stellar.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/animate.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_ares6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg_circle_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingress.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linuxfoundation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="289">
+              <caret line="137" column="125" selection-start-line="137" selection-start-column="125" selection-end-line="137" selection-end-column="125" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -83,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="309723">
               <caret line="18232" column="17" selection-start-line="18232" selection-start-column="17" selection-end-line="18232" selection-end-column="17" />
             </state>
           </provider>
@@ -163,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,7 +144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -239,18 +203,19 @@
       <workItem from="1569512639012" duration="3770000" />
       <workItem from="1569526594899" duration="659000" />
       <workItem from="1569578699477" duration="3192000" />
-      <workItem from="1569584658553" duration="2254000" />
+      <workItem from="1569584658553" duration="2888000" />
+      <workItem from="1569587874129" duration="509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31599000" />
+    <option name="totallyTimeSpent" value="32742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="23" width="1820" height="1008" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15078476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15078476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -266,7 +231,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34624144" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34624144" />
       <window_info anchor="bottom" id="Statistic" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -305,26 +270,34 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/router/server.js" />
-    <entry file="file://$PROJECT_DIR$/ares.js">
+    <entry file="file://$PROJECT_DIR$/style.css" />
+    <entry file="file://$PROJECT_DIR$/bg_ares.jpg" />
+    <entry file="file://$PROJECT_DIR$/css/ares.css" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="289">
+          <caret line="137" column="125" selection-start-line="137" selection-start-column="125" selection-end-line="137" selection-end-column="125" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg_ares.jpg">
+    <entry file="file://$PROJECT_DIR$/bg_ares7.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ares.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="309723">
           <caret line="18232" column="17" selection-start-line="18232" selection-start-column="17" selection-end-line="18232" selection-end-column="17" />
         </state>
       </provider>
@@ -339,32 +312,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ares.css">
+    <entry file="file://$PROJECT_DIR$/ares.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg_ares7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ares.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -132,6 +132,12 @@
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Namespace</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Job</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Cronjob</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Configmap</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
@@ -175,6 +181,12 @@
                                 </div>
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Resources</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Job Components</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Job-Parallelism</button>
                                 </div>
                             </div>
                         </div>
@@ -391,6 +403,10 @@
 
                  if (selectedcomponent=="--Pod-Volumeclaim"){
                      domerge("image:")
+                 }
+
+                 if (selectedcomponent=="--Job-Parallelism"){
+                     domerge("spec:")
                  }
 
             }
