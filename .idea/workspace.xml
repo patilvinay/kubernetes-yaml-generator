@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdeaa8f0-d428-4e27-acf5-13b4a050cecd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ares.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ares.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highlight.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/highlight.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery-2.2.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-2.2.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.appear.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.appear.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.countTo.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.countTo.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/yaml.min.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,15 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ares.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -99,6 +99,7 @@
       <find>kubernetes-yaml-generator</find>
       <find>css</find>
       <find>styleshee</find>
+      <find>.js</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,12 +205,12 @@
       <workItem from="1569526594899" duration="659000" />
       <workItem from="1569578699477" duration="3192000" />
       <workItem from="1569584658553" duration="2888000" />
-      <workItem from="1569587874129" duration="1676000" />
+      <workItem from="1569587874129" duration="2520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33909000" />
+    <option name="totallyTimeSpent" value="34753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="23" width="1820" height="1008" extended-state="0" />
