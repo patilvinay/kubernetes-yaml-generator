@@ -46,8 +46,8 @@ p {
 }
 
 .container {
-    margin: 2px;
-    padding: 2px;
+    margin: 4px;
+    padding: 8px;
     border-radius: 2px;
 }
 .console {

@@ -44,9 +44,8 @@
                        <span class="text-crystal">//</span> <a class="link-sf font-w300" href="https://github.com/reneschoonrok/">KUBERNETES-YAML-GENERATOR</a>
                    </h1>
                    <p>
-                   <label for="box" id="lineid" style = "font-size:14px">Welcome - This site can help you with easily creating basic kubernetes yaml files  </label>
-                   <label for="box" style = "font-size:14px">//There is zero to none functionality yet. </label>
-                       <label for="box" style = "font-size:14px">But I will add more soon. </label>
+                   <label for="box" id="lineid" style = "font-size:14px">Welcome - This page can help you with creating kubernetes yaml files. </label>
+                   <label for="box" style = "font-size:14px">//Click a resource. Add components and save as yaml. </label>
                </p>
 
 
@@ -77,11 +76,22 @@
                                                 </div>
 
                                             </div>
-                                            <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
-                                                <button class="btn btn-xl btn-block btn-sf push-10 id="podinfodetail10" onclick="mergecomp()"></button>
-                                                <div class="tooltip"><span class="tooltiptext">'Click to merge'</span><img src="arrows.gif" onclick="mergecomp()"/></div>
-                                            </div>
 
+
+
+                                            <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                                <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10" onclick="mergecomp()">Merge below into yaml</button>
+
+                                            </div>
+                                            <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                                                <button class="btn btn-xl btn-block btn-sf push-10 id="podinfodetail10" onclick="mergecomp()"></button>
+                                                <div class="tooltip"><span class="tooltiptext">Click to merge</span><img src="arrows.gif" onclick="mergecomp()"/></div>
+                                            </div>
+                                            <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                                                <button class="btn btn-xl btn-block btn-sf2 push-5" id="save" onclick="download()">Save yaml</button>
+                                            </div>
 
 
                                             <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
@@ -169,6 +179,30 @@
                             </div>
                         </div>
 
+                        <div class="block">
+                            <div class="block-header overflow-hidden">
+                                <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Examples</h2>
+                            </div>
+                            <div class="block-content" id="myblock">
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Nginx</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Busybox</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Mysql</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Deployment-stellar</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Service-stellar</button>
+                                </div>
+
+
+                            </div>
+                        </div>
 
 
                     </div>
@@ -190,7 +224,7 @@
                 <div class="block">
 
                     <div class="block-content block-content-full font-s12 text-center visibility-hidden" data-toggle="appear" data-class="animated fadeIn" data-timeout="1000">
-                        2019 &copy; Build by Rene Schoonrok. <a class="link-sf" href="https://github.com/reneschoonrok/">Github</a> CSS/Web layout by <a class="link-sf" href="https://pixelcave.com/">Pixelcave</a>
+                        2019 &copy; Build by Rene Schoonrok. <a class="link-sf" href="https://github.com/reneschoonrok/">Github</a>
                     </div>
                 </div>
                 <!-- END Page Footer -->
@@ -268,6 +302,19 @@
                   areatext2.value = text
                 }
 
+            function download(){
+                var text = document.getElementById("areatext").value;
+                text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+                var blob = new Blob([text], { type: "text/plain"});
+                var anchor = document.createElement("a");
+                anchor.download = "download.yaml";
+                anchor.href = window.URL.createObjectURL(blob);
+                anchor.target ="_blank";
+                anchor.style.display = "none"; // just to be safe!
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
+            }
 
             function domerge(selector) {
                 var textmain = document.querySelector('textarea').value;
