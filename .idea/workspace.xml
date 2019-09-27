@@ -2,8 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdeaa8f0-d428-4e27-acf5-13b4a050cecd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/--LivenessProbeCommand.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/--LivenessProbeHttp.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/--Pod-Namespace.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/--Pod-Volumeclaim.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/--Port.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/--Readynessprobe.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/--Resources.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busybox.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configmap.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deployment-stellar.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helloworld.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Namespace.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nginx.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersistentVolume.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersistentVolumeClaim.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pod.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Secret.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service-stellar.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_ares6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_circle_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linuxfoundation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="408">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -30,23 +66,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="136">
-                <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bg_ares7.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ares.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="238">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="18232" column="17" selection-start-line="18232" selection-start-column="17" selection-end-line="18232" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -56,15 +106,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="52" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -92,6 +133,8 @@
       <find>zero</find>
       <find>github</find>
       <find>kubernetes-yaml-generator</find>
+      <find>css</find>
+      <find>styleshee</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,9 +145,10 @@
       <list>
         <option value="$PROJECT_DIR$/router/server.js" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/ares.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/ares.css" />
+        <option value="$PROJECT_DIR$/css/ares.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -125,6 +169,11 @@
             <path>
               <item name="kubernetes-yaml-generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="kubernetes-yaml-generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubernetes-yaml-generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubernetes-yaml-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,12 +239,12 @@
       <workItem from="1569512639012" duration="3770000" />
       <workItem from="1569526594899" duration="659000" />
       <workItem from="1569578699477" duration="3192000" />
-      <workItem from="1569584658553" duration="1455000" />
+      <workItem from="1569584658553" duration="2254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30800000" />
+    <option name="totallyTimeSpent" value="31599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="23" width="1820" height="1008" extended-state="0" />
@@ -256,25 +305,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/router/server.js" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ares.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ares.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -289,13 +319,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bg_ares.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18232" column="17" selection-start-line="18232" selection-start-column="17" selection-end-line="18232" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="136">
-            <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ares.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg_ares7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ares.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
