@@ -354,6 +354,7 @@ background: rgba(255, 255, 255, .15);
     margin-bottom: 0px;
     border-color: rgba(255, 255, 255, .5);
     outline: 0;
+    white-space: pre-wrap;
 }
 
 .btn.btn-sf3:hover,
@@ -367,6 +368,7 @@ background: rgba(255, 255, 255, .15);
     color: rgba(43, 193, 110, 1);
     border-color: #fff;
     background: rgba(255, 255, 255, .15);
+    white-space: pre-wrap;
 }
 
 .progress {

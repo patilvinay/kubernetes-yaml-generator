@@ -157,37 +157,8 @@
                             <div class="block-header overflow-hidden">
                                 <h2 class="block-title visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Components</h2>
                             </div>
-                            <div class="block-content" id="myblock">
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Pod Components</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeHttp</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Namespace</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Volumeclaim</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeCommand</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Readynessprobe</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Port</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Resources</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Job Components</button>
-                                </div>
-                                <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Job-Parallelism</button>
-                                </div>
+                            <div class="block-content" id="compblock">
+
                             </div>
                         </div>
 
@@ -197,19 +168,19 @@
                             </div>
                             <div class="block-content" id="myblock">
                                 <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Nginx</button>
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Nginx</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Busybox</button>
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Busybox</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Mysql</button>
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Mysql</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Deployment-stellar</button>
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Deployment-stellar</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
-                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Service-stellar</button>
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Service-stellar</button>
                                 </div>
 
 
@@ -428,6 +399,57 @@
             function selectPod(itemtext) {
                 selecteditem = itemtext;
                 selectedtype = "Pod";
+                const myNode = document.getElementById("compblock");
+                while (myNode.firstChild) {
+                    myNode.removeChild(myNode.firstChild);
+                }
+                if (itemtext=='Pod')
+                {
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Pod Components</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeHttp</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeCommand</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Readynessprobe</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Volumeclaim</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Port</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Resources</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Namespace</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+                }
+
+                if (itemtext=='Job')
+                {
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Job components</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Job-Parallelism</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                }
+
 
                 if (selecteditem != ""){
                     var openitem = selecteditem+ '.yaml';
@@ -435,6 +457,63 @@
                  }
 
             }
+
+            function selectOther(itemtext) {
+                selecteditem = itemtext;
+                selectedtype = "Pod";
+                const myNode = document.getElementById("compblock");
+                while (myNode.firstChild) {
+                    myNode.removeChild(myNode.firstChild);
+                }
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Pod components</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeHttp</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--LivenessProbeCommand</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Readynessprobe</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Volumeclaim</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Port</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Resources</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Pod-Namespace</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Job components</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Job-Parallelism</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+
+                if (selecteditem != ""){
+                    var openitem = selecteditem+ '.yaml';
+                    getResource(openitem)
+                }
+
+            }
+
         </script>
         <script src="js/typing.js"></script>
 
