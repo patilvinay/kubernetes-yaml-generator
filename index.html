@@ -72,7 +72,7 @@
 
                                              <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                  <div class="container" contenteditable="true">
-                                                 <textarea class="btn btn-xl btn-block btn-sf3" id="areatext" rows="18" cols="50" class="button6" style="resize:none" data="pod.yaml"></textarea>
+                                                 <textarea class="btn btn-xl btn-block btn-sf3" id="areatext" rows="18" cols="80" class="button6" style="resize:none" data="pod.yaml"></textarea>
                                                 </div>
 
                                             </div>
@@ -96,7 +96,7 @@
 
                                             <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                 <div class="container" contenteditable="true">
-                                                    <textarea class="btn btn-xl btn-block btn-sf3" id="areatext2" rows="12" cols="50" class="button6" style="resize:none" data="pod.yaml"></textarea>
+                                                    <textarea class="btn btn-xl btn-block btn-sf3" id="areatext2" rows="12" cols="80" class="button6" style="resize:none" data="pod.yaml"></textarea>
                                                 </div>
 
                                             </div>
@@ -178,6 +178,12 @@
                                 </div>
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Mysql</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">MultiContainerPod</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">NginxDebianVolume</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectOther(this.innerText)">Deployment-stellar</button>
@@ -386,6 +392,10 @@
                      domerge("paths:")
                  }
 
+                 if (selectedcomponent=="--MultiContainer"){
+                     domerge("containers:")
+                 }
+
             }
 
              function function2() {
@@ -437,6 +447,10 @@
 
                     $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
                     $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Resources</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--MultiContainer</button>').appendTo('#compblock');
                     $('</div>').appendTo('#compblock');
 
                     $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
