@@ -144,6 +144,9 @@
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Secret</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
+                                    <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">Ingress</button>
+                                </div>
+                                <div class="row items-push overflow-hidden">
                                     <button type="button" class="btn btn-xl btn-sf" onclick="selectPod(this.innerText)">PersistentVolume</button>
                                 </div>
                                 <div class="row items-push overflow-hidden">
@@ -379,6 +382,9 @@
                  if (selectedcomponent=="--Job-Parallelism"){
                      domerge("spec:")
                  }
+                 if (selectedcomponent=="--Path"){
+                     domerge("paths:")
+                 }
 
             }
 
@@ -446,6 +452,18 @@
                     $('</div>').appendTo('#compblock');
                     $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
                     $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Job-Parallelism</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+
+                }
+
+                if (itemtext=='Ingress')
+                {
+
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">Ingress components</button>').appendTo('#compblock');
+                    $('</div>').appendTo('#compblock');
+                    $('<div class="row items-push overflow-hidden">').appendTo('#compblock');
+                    $('<button type="button" class="btn btn-xl btn-sf" onclick="selectComponent(this.innerText)">--Path</button>').appendTo('#compblock');
                     $('</div>').appendTo('#compblock');
 
                 }
