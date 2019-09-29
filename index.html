@@ -70,33 +70,21 @@
 
                                         <div class="row">
 
-                                             <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                                             <div class="col-xs-7 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                  <div class="container" contenteditable="true">
-                                                 <textarea class="btn btn-xl btn-block btn-sf3" id="areatext" rows="18" cols="50" class="button6" style="resize:none" data="pod.yaml"></textarea>
+                                                 <textarea class="btn btn-xl btn-block btn-sf3" id="areatext" rows="18" cols="45" class="button6" style="resize:none" data="pod.yaml"></textarea>
                                                 </div>
 
                                             </div>
 
 
 
-                                            <div class="col-xs-5 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
-                                                <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10" onclick="mergecomp()">Merge below into yaml</button>
-
-                                            </div>
-                                            <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
-
-                                                <button class="btn btn-xl btn-block btn-sf push-10 id="podinfodetail10" onclick="mergecomp()"></button>
-                                                <div class="tooltip"><span class="tooltiptext">Click to merge</span><img src="arrows.gif" onclick="mergecomp()"/></div>
-                                            </div>
-                                            <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
-
-                                                <button class="btn btn-xl btn-block btn-sf2 push-5" id="save" onclick="download()">Save yaml</button>
-                                            </div>
 
 
-                                            <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                                            <div class="col-xs-7 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                 <div class="container" contenteditable="true">
-                                                    <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext2" rows="12" cols="50" class="button6" style="resize:none" data="pod.yaml"></textarea>
+                                                    <textarea class="btn btn-xl btn-block btn-sf3 push-10" id="areatext2" rows="12" cols="45" class="button6" style="resize:none" data="pod.yaml"></textarea>
                                                 </div>
 
                                             </div>
@@ -202,8 +190,27 @@
 
                 </div>
                 <!-- END Columns -->
+                <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+                    <button class="btn btn-xl btn-block btn-sf push-5" id="podinfodetail10" onclick="mergecomp()">Merge into yaml</button>
 
+                </div>
+                <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                    <button class="btn btn-xl btn-block btn-sf push-10 id="podinfodetail10" onclick="mergecomp()"></button>
+                    <div class="tooltip"><span class="tooltiptext">Click to merge</span><img src="arrows.gif" onclick="mergecomp()"/></div>
+                </div>
+                <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                    <button class="btn btn-xl btn-block btn-sf2 push-5" id="save" onclick="download()">Save yaml</button>
+                </div>
                 <!-- Page Footer -->
+                <div class="block">
+                    <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                        <button class="btn btn-xl btn-block btn-sf2 push-5" id="save" onclick="download()">Save yaml</button>
+                    </div>
+                </div>
+
                 <div class="block">
 
                     <div class="block-content block-content-full font-s12 text-center visibility-hidden" data-toggle="appear" data-class="animated fadeIn" data-timeout="1000">
