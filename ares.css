@@ -36,6 +36,7 @@ h1, h2, h3, .h1, .h2, .h3, .heading {
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10px;
+
 }
 
 /* The navigation menu links */
@@ -44,6 +45,7 @@ h1, h2, h3, .h1, .h2, .h3, .heading {
     font-size: 14px;
     color: #2ecc71;
     display: block;
+    white-space: pre-wrap;
 }
 
 /* When you mouse over the navigation links, change their color */
