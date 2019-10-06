@@ -133,6 +133,11 @@
                                                 <button class="btn btn-xl btn-block btn-sf2" id="save" onclick="download()">Save yaml</button>
                                             </div>
 
+                                            <div class="col-xs-3 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
+
+                                                <button class="btn btn-xl btn-block btn-sf2" id="save" onclick="copy()">Select and copy</button>
+                                            </div>
+
 
                                             <div class="col-xs-8 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="100">
                                                 <div class="container" contenteditable="true">
@@ -245,6 +250,16 @@
                 document.body.appendChild(anchor);
                 anchor.click();
                 document.body.removeChild(anchor);
+            }
+
+            function copy(){
+                var myareatext = document.getElementById("areatext").select();
+                var text = document.getElementById("areatext").value;
+                text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+
+                //areatext.setSelectionRange(0, 999999);
+                document.execCommand('copy');
+
             }
 
             function domerge(selector) {
