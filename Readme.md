@@ -7,7 +7,7 @@ If you would like to see certain features added, just create a github issue and 
 Live version: https://reneschoonrok.github.io/kubernetes-yaml-generator/ <br/>
 or www.robotdialog.com <br/>
 <br/>
-![](/demo.gif)
+![](/3.gif)
 <br/>
 
 
